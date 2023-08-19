@@ -8,10 +8,17 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import './menu.css'
 import Posts from '../Posts/Posts';
+import CreatePost from '../CreatePost/CreatePost';
 const Menu = () =>
 {
 
     const [value, setValue] = React.useState('1');
+    const [showCreate, setShowCreate] = React.useState(false)
+
+    const handleCreateShow = () =>
+    {
+        setShowCreate(true)
+    }
 
     const handleChange = (event, newValue) =>
     {
@@ -26,7 +33,8 @@ const Menu = () =>
                         <div className='instagram-logo'><h1>Instagram</h1></div>
                         <Tab sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<HomeOutlinedIcon />} label="Home" value="1" />
                         <Tab sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<SearchOutlinedIcon />} label="Search" value="2" />
-                        <Tab sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<AddCircleOutlineOutlinedIcon />} label="Create" value="3" />
+                        <Tab onClick={handleCreateShow} sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<AddCircleOutlineOutlinedIcon />} label="Create" value={value} />
+                       
                     </TabList>
 
                     <TabPanel className='tabpanel' value="1">
@@ -36,10 +44,11 @@ const Menu = () =>
                         </div>
                     </TabPanel>
                     <TabPanel className='tabpanel' value="2"><h1>Search (Search component)</h1></TabPanel>
-                    <TabPanel className='tabpanel' value="3"><h1>Create (Create a post component)</h1></TabPanel>
+                    {/* <TabPanel className='tabpanel' value="3"><h1>Create (Create a post component)</h1></TabPanel> */}
                 </Box>
             </TabContext>
 
+           {showCreate && <CreatePost setShowCreate={setShowCreate} />}
         </Box>
     )
 }

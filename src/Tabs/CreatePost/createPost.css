@@ -1,0 +1,108 @@
+.backdrop{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.423);
+    
+}
+
+.x-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.x-button button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 26px;
+
+}
+
+.create-post{
+    position: absolute;
+    background-color: #262626;
+    height: 600px;
+    width: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.create-post-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 1px solid #afafafd0;
+    color: #ffffff;
+    height: 60px;
+    font-size: 24px;
+}
+
+.create-post-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.create-post-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width:200px;
+}
+
+.create-post-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.create-post-info-text h4{
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 10;
+}
+
+.create-post-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -140px;
+}
+
+.create-post-action button{
+    background-color: #1877F2;
+    outline: none;
+    border-color: #1877F2;
+    border-radius: 8px; 
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.create-post-action button:hover{
+    background-color: #0f59ba;
+    border-color: #0f59ba;
+
+}
