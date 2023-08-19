@@ -1,0 +1,22 @@
+.tab-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 5px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.instagram-logo{
+    display: flex;
+    padding: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.tab {
+    display: flex;
+    justify-self: flex-start;
+    color: #ffffff;
+}

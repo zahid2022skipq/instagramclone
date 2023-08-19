@@ -1,10 +1,12 @@
+import { Box, Typography } from '@mui/material';
 import './App.css';
+import Menu from './Tabs/Menu/Menu';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Instagram Clone</h1>
-    </div>
+    <Box className="App">
+      <Menu />
+    </Box>
   );
 }
 
