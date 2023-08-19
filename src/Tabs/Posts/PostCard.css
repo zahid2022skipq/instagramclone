@@ -1,0 +1,56 @@
+.postcard{
+    width: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.creator-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-pic img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+
+}
+
+.creator-name{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.created-at{
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.post-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.post-media img{
+    height: 568px;
+    width: 100%;
+}

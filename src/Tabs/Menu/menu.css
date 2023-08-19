@@ -8,6 +8,10 @@
     color: #ffffff;
 }
 
+.tablist{
+    border-right: 1px solid #dfdfdf;
+}
+
 .instagram-logo{
     display: flex;
     padding: 20px;
@@ -18,5 +22,15 @@
 .tab {
     display: flex;
     justify-self: flex-start;
+    justify-content: flex-start;
     color: #ffffff;
+    padding: 0;
 }
+
+.tabpanel{
+    width: 470px;
+    padding-left: 48px;
+    border: 1px solid #dfdfdf;
+    margin-left: 20%;
+}
+

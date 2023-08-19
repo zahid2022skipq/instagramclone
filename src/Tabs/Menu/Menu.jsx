@@ -7,6 +7,7 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import './menu.css'
+import Posts from '../Posts/Posts';
 const Menu = () =>
 {
 
@@ -21,15 +22,21 @@ const Menu = () =>
         <Box>
             <TabContext value={value}>
                 <Box className='tab-container' sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <TabList orientation='vertical' onChange={handleChange} aria-label="lab API tabs example">
+                    <TabList className='tablist' orientation='vertical' onChange={handleChange} aria-label="lab API tabs example">
                         <div className='instagram-logo'><h1>Instagram</h1></div>
-                        <Tab className='tab' iconPosition='start' icon={<HomeOutlinedIcon />} label="Home" value="1" />
-                        <Tab className='tab' iconPosition='start' icon={<SearchOutlinedIcon />} label="Search" value="2" />
-                        <Tab className='tab' iconPosition='start' icon={<AddCircleOutlineOutlinedIcon />} label="Create" value="3" />
+                        <Tab sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<HomeOutlinedIcon />} label="Home" value="1" />
+                        <Tab sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<SearchOutlinedIcon />} label="Search" value="2" />
+                        <Tab sx={{"&.MuiTab-textColorPrimary": {color:'white'}}} className='tab' iconPosition='start' icon={<AddCircleOutlineOutlinedIcon />} label="Create" value="3" />
                     </TabList>
-                    <TabPanel value="1">Item One</TabPanel>
-                    <TabPanel value="2">Item Two</TabPanel>
-                    <TabPanel value="3">Item Three</TabPanel>
+
+                    <TabPanel className='tabpanel' value="1">
+                        <div>
+                            <h1>Home (All the posts here)</h1>
+                            <Posts />
+                        </div>
+                    </TabPanel>
+                    <TabPanel className='tabpanel' value="2"><h1>Search (Search component)</h1></TabPanel>
+                    <TabPanel className='tabpanel' value="3"><h1>Create (Create a post component)</h1></TabPanel>
                 </Box>
             </TabContext>
 
