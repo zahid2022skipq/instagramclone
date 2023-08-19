@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 41px;
 }
 
 .creator-info{
@@ -51,6 +52,19 @@
 }
 
 .post-media img{
-    height: 568px;
+    height: 585px;
     width: 100%;
+}
+
+.post-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.post-icons{
+    margin-right: 10px;
 }

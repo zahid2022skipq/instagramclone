@@ -1,5 +1,9 @@
 import React from 'react'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddCommentOutlinedIcon from '@mui/icons-material/AddCommentOutlined';
+import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
+import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import "./PostCard.css"
 const PostCard = ({ id, creator, creatorProfile, createdAt, likes, comments, media }) =>
 {
@@ -17,7 +21,16 @@ const PostCard = ({ id, creator, creatorProfile, createdAt, likes, comments, med
             <div className='post-media'>
                 <img src={media} alt={creator} />
             </div>
-            <div className='post-actions'></div>
+            <div className='post-actions'>
+                <div className='like-comment'>
+                    <FavoriteBorderIcon className='post-icons' />
+                    <AddCommentOutlinedIcon className='post-icons' />
+                    <SendOutlinedIcon className='post-icons' />
+                </div>
+                <div className='bookmark'>
+                    <BookmarkBorderOutlinedIcon />
+                </div>
+            </div>
             <div className='post-info'></div>
             <div className='post-comments'></div>
         </div>

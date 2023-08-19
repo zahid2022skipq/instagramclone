@@ -30,7 +30,13 @@
 .tabpanel{
     width: 470px;
     padding-left: 48px;
-    border: 1px solid #dfdfdf;
     margin-left: 20%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.tabpanel::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
