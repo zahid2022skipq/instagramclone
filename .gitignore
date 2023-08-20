@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/backend/node_modules
+/backend/instaclone-396513-912db094009d.json
 # testing
 /coverage
 
