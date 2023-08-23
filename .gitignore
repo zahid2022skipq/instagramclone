@@ -8,7 +8,7 @@
 /backend/instaclone-396513-912db094009d.json
 # testing
 /coverage
-backend/.env
+/backend/*.env
 
 # production
 /build
@@ -19,7 +19,7 @@ backend/.env
 .env.development.local
 .env.test.local
 .env.production.local
-.env
+*.env
 
 npm-debug.log*
 yarn-debug.log*
